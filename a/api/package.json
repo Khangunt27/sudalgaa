@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "seed:ub": "node seed-ub.js",
+    "cleanup:trips": "node cleanup.js --trips",
+    "cleanup:users": "node cleanup.js --users",
+    "cleanup:all": "node cleanup.js --trips --users",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@clerk/clerk-sdk-node": "^5.1.6",
+    "@vitalets/google-translate-api": "^9.2.0",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.4",
+    "nodemailer": "^7.0.5",
+    "nodemon": "^3.1.10"
+  }
+}
